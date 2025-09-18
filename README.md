@@ -4,8 +4,8 @@ Es geht um eine Uhr, bei der währen der Schlafenszeit, das Display ausgeschlate
 
 Teile: 
 
-<p style="margin-left:20px;">
-  <img src="Bilder/OLED-Display-modul-SH1106.png" width="2000">
+<p style="margin-left:50px;">
+  <img src="Bilder/OLED-Display-modul-SH1106.png" width="500">
 </p>
 
 
