@@ -48,7 +48,9 @@ static int lastSyncDay = -1;
 // --- Setup ---
 void setup() {
   Serial.begin(115200);
-
+  
+  pinMode(3, OUTPUT);    // RF switch power on
+  digitalWrite(3, LOW);
   pinMode(WIFI_ANT_CONFIG, OUTPUT);    // pinMode(14, OUTPUT);
   digitalWrite(WIFI_ANT_CONFIG, HIGH); // digitalWrite(14, HIGH); // Use external antenna
 

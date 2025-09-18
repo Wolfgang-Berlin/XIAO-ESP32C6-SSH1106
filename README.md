@@ -9,7 +9,7 @@ Teile:
 
 
 
-![](Bilder/seed XIAO-ESP32 C6.jpg)
+![](Bilder/RISC-V-XIAO-ESP32C6__1024x350.png)
 
 
 Um 4:30 Uhr wird die Zeit über einen NTP-Server synchronisiert. in der restlichen Zeit ist Wlan abgeschaltet und der ESP32 geht in den modem_sleep.
