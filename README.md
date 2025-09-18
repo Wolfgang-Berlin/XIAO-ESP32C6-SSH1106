@@ -5,7 +5,7 @@ Es geht um eine Uhr, bei der währen der Schlafenszeit, das Display ausgeschlate
 Teile: 
 
 
-![](Bilder/OLED-Display-modul-SH1106.png) ![](Bilder/OLED-Display-modul-SH1106.png)
+![](Bilder/Blank.png) ![](Bilder/OLED-Display-modul-SH1106.png)
 
 
 
