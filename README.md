@@ -18,4 +18,4 @@ Um 4:30 Uhr wird die Zeit über einen NTP-Server synchronisiert. in der restlich
 Dies ist die zweite Version. 
 
 Leider musste ich feststellen, dass mein Wlan-Signal an den Ort wo ich die Uhr aufgestellt habe zu schwach ist.
-Deshald nutze ich jetzt einen XIOA-ESP32C6 von SEED mit einer externen Antenne.
+Deshalb nutze ich jetzt einen XIOA-ESP32C6 von SEED mit einer externen Antenne.
