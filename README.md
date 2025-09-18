@@ -4,8 +4,9 @@ Es geht um eine Uhr, bei der währen der Schlafenszeit, das Display ausgeschlate
 
 Teile: 
 
-
-![](Bilder/OLED-Display-modul-SH1106.png)
+<p align="left" style="margin-left:20px;">
+  <img src="Bilder/OLED-Display-modul-SH1106.png" width="50%">
+</p>
 
 
 
@@ -17,5 +18,5 @@ Um 4:30 Uhr wird die Zeit über einen NTP-Server synchronisiert. in der restlich
 
 Dies ist die zweite Version. 
 
-Leider musste ich feststellen, dass mein Wlan-Signal an den Ort wo ich die Uhr aufgestellt habe zu schwach ist.
+Leider musste ich feststellen, dass mein Wlan-Signal an dem Ort wo ich die Uhr aufgestellt habe zu schwach ist.
 Deshalb nutze ich jetzt einen XIOA-ESP32C6 von SEED mit einer externen Antenne.
