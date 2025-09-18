@@ -4,10 +4,9 @@ Es geht um eine Uhr, bei der währen der Schlafenszeit, das Display ausgeschlate
 
 Teile: 
 
-<p align="left" style="margin-left:20px;">
-  <img src="Bilder/OLED-Display-modul-SH1106.png" width="50%">
+<p style="margin-left:20px;">
+  <img src="Bilder/OLED-Display-modul-SH1106.png" width="200">
 </p>
-
 
 
 ![](Bilder/RISC-V-XIAO-ESP32C6--1024x350.png)
