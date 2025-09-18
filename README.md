@@ -6,7 +6,7 @@ Teile:
 
 <p align="left" style="margin-left:20px;">
   
- > <img src="Bilder/OLED-Display-modul-SH1106.png" width="30%">
+ > > <img src="Bilder/OLED-Display-modul-SH1106.png" width="30%">
 </p>
 
 
