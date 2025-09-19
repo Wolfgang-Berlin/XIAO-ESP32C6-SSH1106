@@ -5,7 +5,7 @@ Es geht um eine Uhr, bei der währen der Schlafenszeit, das Display ausgeschlate
 Teile: 
 
 
-![](Bilder/LAN_Antenne.png) ![](SH1106.png)
+![](Bilder/LAN_Antenne.png) ![](SSH1106.png)
 
 
 
