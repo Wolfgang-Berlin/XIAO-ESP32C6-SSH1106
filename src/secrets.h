@@ -1,7 +1,7 @@
 // Use this file to store all of the private credentials 
 // and connection details
 
-#define SECRET_SSID "******"		// replace MySSID with your WiFi network name
+#define SECRET_SSID "A1"		// replace MySSID with your WiFi network name
 #define SECRET_PASS "XXXXXX"	// replace MyPassword with your WiFi password
 
 #define SECRET_CH_ID 000000			// replace 0000000 with your channel number
