@@ -25,6 +25,7 @@ time_t getLastSyncTime();
 void initDisplay();
 void clearDisplay();
 void drawStatus(const char* msg);
+void drawOK();
 void drawTime(const struct tm* timeinfo);
 
 #endif

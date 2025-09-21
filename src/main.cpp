@@ -67,7 +67,7 @@ static bool syncDoneThisMinute = false;
 
 #define Sync_Stunde 4         
 #define Sync_Min    30
-const int sleepTime_Start = 22;  // 23:00 Uhr
+const int sleepTime_Start = 22;  // 22:00 Uhr
 const int sleepTime_End  =  6;   // 06:00 Uhr
 const int SYNC_OK_DISPLAY_HOURS = 4;   
 
@@ -101,8 +101,9 @@ void loop() {
         Serial.println(&nowLocal);
         time_t lastSync = getLastSyncTime();
             if (lastSync > 0 && (now - lastSync) < (SYNC_OK_DISPLAY_HOURS * 3600)) {
-              lastDisplayedMinute = nowLocal.tm_min;
+             drawOK();       // small + top right for 4 hours 
         }
+        lastDisplayedMinute = nowLocal.tm_min;
     }
    } 
   delay(1000);
