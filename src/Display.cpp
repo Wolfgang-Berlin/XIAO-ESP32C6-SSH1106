@@ -28,7 +28,11 @@ void drawStatus(const char* msg) {
   oled.drawStr(0, 60, msg);
   oled.sendBuffer();
 }
-
+void drawOK() {
+  oled.setFont(u8g2_font_courB08_tr);
+  oled.drawStr(122, 6, "+"); // small + at the top right
+  oled.sendBuffer();
+}
 void drawTime(const struct tm* timeinfo) {
   char timeStr[6];
   oled.setPowerSave(0);
@@ -38,9 +42,5 @@ void drawTime(const struct tm* timeinfo) {
   oled.setFont(u8g2_font_logisoso42_tr);
   oled.drawStr(1, 52, timeStr);
   
-  if (Synchron_counter = 1) {
-      oled.setFont(u8g2_font_courB08_tr);
-  }
-  oled.drawStr(122, 6, "+"); // small + at the top right;
   oled.sendBuffer();
 }

@@ -67,7 +67,7 @@ static bool syncDoneThisMinute = false;
 
 #define Sync_Stunde 4         
 #define Sync_Min    30
-const int sleepTime_Start = 23;  // 23:00 Uhr
+const int sleepTime_Start = 22;  // 23:00 Uhr
 const int sleepTime_End  =  6;   // 06:00 Uhr
 const int SYNC_OK_DISPLAY_HOURS = 4;   
 
