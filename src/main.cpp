@@ -92,11 +92,11 @@ void loop() {
           lastDisplayedMinute = nowLocal.tm_min;
           }
   } else {
-    // Night
+    // Active time
       oled.setPowerSave(0);
 
     if (nowLocal.tm_min != lastDisplayedMinute) {
-      // Day
+      
         drawTime(&nowLocal);
         Serial.println(&nowLocal);
         time_t lastSync = getLastSyncTime();
