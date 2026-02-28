@@ -44,10 +44,10 @@ void drawTime(const struct tm* timeinfo) {
   
   oled.sendBuffer();
 }
-
 void drawDot() {
   oled.setPowerSave(0);
   oled.clearBuffer();
-  oled.drawDisc(124, 4, 2);  // kleiner Punkt, gleiche Position wie das '+'
+  oled.setFont(u8g2_font_courB08_tr);  // gleiche Font wie drawOK()
+  oled.drawStr(122, 6, ".");           // gleiche Position wie das '+'
   oled.sendBuffer();
 }
