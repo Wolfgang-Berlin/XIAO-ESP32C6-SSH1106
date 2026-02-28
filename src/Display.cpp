@@ -44,3 +44,10 @@ void drawTime(const struct tm* timeinfo) {
   
   oled.sendBuffer();
 }
+
+void drawDot() {
+  oled.setPowerSave(0);
+  oled.clearBuffer();
+  oled.drawDisc(124, 4, 2);  // kleiner Punkt, gleiche Position wie das '+'
+  oled.sendBuffer();
+}

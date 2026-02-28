@@ -69,6 +69,8 @@ static bool syncDoneThisMinute = false;
 #define Sync_Min    30
 const int sleepTime_Start = 22;  // 22:00 Uhr
 const int sleepTime_End  =  6;   // 06:00 Uhr
+#define WakeUp_Stunde 5
+#define WakeUp_Min    30
 const int SYNC_OK_DISPLAY_HOURS = 4;   
 
 void loop() {
@@ -85,12 +87,25 @@ void loop() {
       syncDoneThisMinute = false;
       }
 
-
+/*
   if (nowLocal.tm_hour >= sleepTime_Start || nowLocal.tm_hour < sleepTime_End) {
     if (nowLocal.tm_min != lastDisplayedMinute) {
           clearDisplay();
           lastDisplayedMinute = nowLocal.tm_min;
           }
+*/
+
+if (nowLocal.tm_hour >= sleepTime_Start || nowLocal.tm_hour < sleepTime_End) {
+
+    bool showDot = (nowLocal.tm_hour == WakeUp_Stunde && nowLocal.tm_min >= WakeUp_Min);
+
+    if (nowLocal.tm_min != lastDisplayedMinute) {
+        if (showDot) {
+            drawDot();
+        } else {
+            clearDisplay();
+        }
+        lastDisplayedMinute = nowLocal.tm_min;
   } else {
     // Active time
       oled.setPowerSave(0);

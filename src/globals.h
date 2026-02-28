@@ -27,5 +27,6 @@ void clearDisplay();
 void drawStatus(const char* msg);
 void drawOK();
 void drawTime(const struct tm* timeinfo);
+void drawDot(); 
 
 #endif
