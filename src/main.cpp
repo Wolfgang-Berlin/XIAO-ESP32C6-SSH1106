@@ -83,17 +83,11 @@ void loop() {
       syncTime();
       syncDoneThisMinute = true;
       }
+
   if (nowLocal.tm_min != Sync_Min) {
       syncDoneThisMinute = false;
       }
 
-/*
-  if (nowLocal.tm_hour >= sleepTime_Start || nowLocal.tm_hour < sleepTime_End) {
-    if (nowLocal.tm_min != lastDisplayedMinute) {
-          clearDisplay();
-          lastDisplayedMinute = nowLocal.tm_min;
-          }
-*/
 
 if (nowLocal.tm_hour >= sleepTime_Start || nowLocal.tm_hour < sleepTime_End) {
 
@@ -106,18 +100,20 @@ if (nowLocal.tm_hour >= sleepTime_Start || nowLocal.tm_hour < sleepTime_End) {
             clearDisplay();
         }
         lastDisplayedMinute = nowLocal.tm_min;
+    }
   } else {
     // Active time
       oled.setPowerSave(0);
-
+    
     if (nowLocal.tm_min != lastDisplayedMinute) {
       
         drawTime(&nowLocal);
         Serial.println(&nowLocal);
         time_t lastSync = getLastSyncTime();
+
             if (lastSync > 0 && (now - lastSync) < (SYNC_OK_DISPLAY_HOURS * 3600)) {
-             drawOK();       // small + top right for 4 hours 
-        }
+             drawOK();  } else { clearOK(); }     // small + top right for 4 hours 
+        
         lastDisplayedMinute = nowLocal.tm_min;
     }
    } 

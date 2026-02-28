@@ -33,6 +33,12 @@ void drawOK() {
   oled.drawStr(122, 6, "+"); // small + at the top right
   oled.sendBuffer();
 }
+void clearOK() {
+  oled.setFont(u8g2_font_courB08_tr);
+  oled.drawStr(122, 6, " "); // clear the + sign
+  oled.sendBuffer();
+}
+
 void drawTime(const struct tm* timeinfo) {
   char timeStr[6];
   oled.setPowerSave(0);
