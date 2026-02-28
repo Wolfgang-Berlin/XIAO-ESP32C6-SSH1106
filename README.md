@@ -1,6 +1,6 @@
 
 
-Es geht um eine Uhr, bei der währen der Schlafenszeit, das Display ausgeschlaten wird.
+Es geht um eine Uhr, bei der währen der Schlafenszeit, das Display ausgeschaltet wird.
 
 Teile: 
 
