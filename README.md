@@ -23,6 +23,6 @@ Deshalb nutze ich jetzt einen XIOA-ESP32C6 von SEED mit einer externen Antenne.
 
 28.2.2026
 
-Inzwischen habe ich mir überlegt, dass es gut wäre schon um 5:30 Uhr vorab einen Hinweis zu bekommen. 
+Inzwischen habe ich mir überlegt, dass es gut wäre schon um 5:30 Uhr, vorab einen Hinweis zu bekommen. 
 
 Und ich habe einfach Claude gebeten den Code zu ändern.
