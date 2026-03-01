@@ -28,14 +28,10 @@ void drawStatus(const char* msg) {
   oled.drawStr(0, 60, msg);
   oled.sendBuffer();
 }
-void drawOK() {
-  oled.setFont(u8g2_font_courB08_tr);
-  oled.drawStr(122, 6, "+"); // small + at the top right
-  oled.sendBuffer();
-}
-void clearOK() {
-  oled.setFont(u8g2_font_courB08_tr);
-  oled.drawStr(122, 6, " "); // clear the + sign
+
+void drawInfo(const char* msg) {
+  oled.setFont(u8g2_font_courR08_tr);
+  oled.drawStr(122, 8, msg);
   oled.sendBuffer();
 }
 
@@ -46,14 +42,6 @@ void drawTime(const struct tm* timeinfo) {
   strftime(timeStr, sizeof(timeStr), "%H:%M", timeinfo);
   oled.setContrast(1);
   oled.setFont(u8g2_font_logisoso42_tr);
-  oled.drawStr(1, 52, timeStr);
-  
-  oled.sendBuffer();
-}
-void drawDot() {
-  oled.setPowerSave(0);
-  oled.clearBuffer();
-  oled.setFont(u8g2_font_courB08_tr);  // gleiche Font wie drawOK()
-  oled.drawStr(122, 6, ".");           // gleiche Position wie das '+'
+  oled.drawStr(1, 53, timeStr);
   oled.sendBuffer();
 }

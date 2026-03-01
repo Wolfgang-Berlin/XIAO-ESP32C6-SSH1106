@@ -75,10 +75,9 @@ const int SYNC_OK_DISPLAY_HOURS = 4;
 
 void loop() {
   time_t now = time(nullptr);
-  struct tm nowLocal;
+  struct tm nowLocal; 
   localtime_r(&now, &nowLocal);
 
-   // synchronize daily
   if (nowLocal.tm_hour == Sync_Stunde && nowLocal.tm_min == Sync_Min && !syncDoneThisMinute) {
       syncTime();
       syncDoneThisMinute = true;
@@ -91,11 +90,10 @@ void loop() {
 
 if (nowLocal.tm_hour >= sleepTime_Start || nowLocal.tm_hour < sleepTime_End) {
 
-    bool showDot = (nowLocal.tm_hour == WakeUp_Stunde && nowLocal.tm_min >= WakeUp_Min);
-
+    bool showDot = (nowLocal.tm_hour == WakeUp_Stunde && nowLocal.tm_min >= WakeUp_Min); 
     if (nowLocal.tm_min != lastDisplayedMinute) {
         if (showDot) {
-            drawDot();
+            drawInfo(".");
         } else {
             clearDisplay();
         }
@@ -112,7 +110,7 @@ if (nowLocal.tm_hour >= sleepTime_Start || nowLocal.tm_hour < sleepTime_End) {
         time_t lastSync = getLastSyncTime();
 
             if (lastSync > 0 && (now - lastSync) < (SYNC_OK_DISPLAY_HOURS * 3600)) {
-             drawOK();  } else { clearOK(); }     // small + top right for 4 hours 
+             drawInfo("*");  } else { drawInfo(" "); }     // small + top right for 4 hours 
         
         lastDisplayedMinute = nowLocal.tm_min;
     }
